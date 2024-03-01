@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let item = "";
+let item = 0;
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -19,8 +19,8 @@ btn1.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 1!");
-		item = "1";
+		tg.MainButton.setText(String(item));
+		item +=5000;
 		tg.MainButton.show();
 	}
 });
@@ -42,7 +42,7 @@ btn3.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 3!");
-		item = "3";
+		item = 3;
 		tg.MainButton.show();
 	}
 });
@@ -53,7 +53,7 @@ btn4.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 4!");
-		item = "4";
+		item = 4;
 		tg.MainButton.show();
 	}
 });
@@ -64,7 +64,7 @@ btn5.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 5!");
-		item = "5";
+		item = 5;
 		tg.MainButton.show();
 	}
 });
@@ -75,7 +75,7 @@ btn6.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 6!");
-		item = "6";
+		item = 6;
 		tg.MainButton.show();
 	}
 });
@@ -83,6 +83,7 @@ btn6.addEventListener("click", function(){
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	tg.sendData(item);
+	item=0;
 });
 
 
