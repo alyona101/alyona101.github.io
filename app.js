@@ -20,7 +20,7 @@ btn1.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText(String(item));
-		item =5000;
+		item +=5000;
 		tg.MainButton.show();
 	}
 });
@@ -31,7 +31,7 @@ btn2.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText(String(item));
-		item =5000;
+		item +=5000;
 		tg.MainButton.show();
 	}
 });
@@ -42,7 +42,7 @@ btn3.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText(String(item));
-		item =5000;
+		item +=5000;
 		tg.MainButton.show();
 	}
 });
@@ -53,7 +53,7 @@ btn4.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText(String(item));
-		item =5000;
+		item +=5000;
 		tg.MainButton.show();
 	}
 });
@@ -64,7 +64,7 @@ btn5.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText(String(item));
-		item =5000;
+		item +=5000;
 		tg.MainButton.show();
 	}
 });
@@ -75,7 +75,7 @@ btn6.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText(String(item));
-		item =5000;
+		item +=5000;
 		tg.MainButton.show();
 	}
 });
