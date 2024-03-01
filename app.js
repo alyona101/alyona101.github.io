@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let item = 0;
+let item = "";
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -19,8 +19,8 @@ btn1.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText(String(item));
-		item +=5000;
+		tg.MainButton.setText(item);
+		item ="5000";
 		tg.MainButton.show();
 	}
 });
@@ -82,8 +82,7 @@ btn6.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(string(item));
-	item=0;
+	tg.sendData(item);
 });
 
 
